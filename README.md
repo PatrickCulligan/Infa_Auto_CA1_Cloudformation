@@ -14,9 +14,17 @@
 
 6. Connect to the EC2 instance through PuTTY.
 
-7.  Confirm AWS, Ansible and Terraform CLI access.
+7. mkdir ~/.aws/ && vi ~/.aws/credentials
+
+ [default]
+aws_access_key_id=<AK>
+aws_secret_access_key=<SK>
+aws_session_token=<T>
+region=us-east-1
+
+9.  Confirm AWS, Ansible and Terraform CLI access.
    
-   ansible --version && terraform --version
+   ansible --version && terraform --version && aws --version
    
 8. Proceed to terraform read
 
